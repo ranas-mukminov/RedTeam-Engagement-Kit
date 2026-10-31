@@ -1,3 +1,22 @@
+> **Problem:** an engagement that cannot show written scope, authorisation, stop conditions and evidence handling will not pass a serious review — however good the technical findings are.
+>
+> **What this is:** a methodology kit for authorised penetration testing and red-team engagements: scope and authorisation templates, rules of engagement, checklists, evidence handling and report templates. **No exploit code, no payloads.**
+>
+> **Who it is for:** red teams, reviewers and clients who need an engagement that is authorised, bounded and reversible.
+>
+> **Quickstart:**
+>
+> ```bash
+> git clone https://github.com/ranas-mukminov/RedTeam-Engagement-Kit.git
+> cd RedTeam-Engagement-Kit
+> ls templates docs guides examples
+> ```
+>
+> **Sample result:** `examples/lab-engagement-report.md` is a filled lab-engagement report with 9 lab findings, a timeline and remediation — labelled, on its first line, as a lab engagement, not a client engagement.
+>
+[![CI](https://github.com/ranas-mukminov/RedTeam-Engagement-Kit/actions/workflows/docs-check.yml/badge.svg)](https://github.com/ranas-mukminov/RedTeam-Engagement-Kit/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+---
 # RedTeam-Engagement-Kit
 
 A methodology kit for authorised penetration testing and red-team engagements.
