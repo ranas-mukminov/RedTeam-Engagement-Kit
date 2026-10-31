@@ -1,0 +1,13 @@
+name: docs-check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check documentation files are present and non-empty
+        run: |
+          test -s README.md
+          test -s SECURITY.md
+          for f in $(find . -name '*.md' -not -path './.github/*'); do test -s "$f" || (echo "empty: $f" && exit 1); done
+          echo "docs-check ok"
